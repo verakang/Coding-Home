@@ -1,10 +1,49 @@
----
-title: Coding Home
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<section class="banner">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="assets/images/logo2.svg">
+  <title>
+    Coding Home
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top py-0">
+    <div class="container">
+      <h1 class="my-4"><a class="navbar-brand" href="index.html">Coding Home</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons navbar-icon text-primary">
+          drag_handle
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link px-4" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link" href="courses.html">課程介紹</a>
+          </li>
+          <li class="nav-item mb-3 mb-lg-0">
+            <a class="nav-link px-4" href="#"><span class="material-icons me-1 login-icon">
+                account_circle
+              </span>登入</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="topbox"></div>
+  <section class="banner">
   <div class="container position-absolute top-50 start-50 translate-middle">
     <div class="row">
       <div class="banner-text text-center col-11 col-lg-6 mx-auto py-6 px-8 border position-relative">
@@ -406,3 +445,14 @@ current: index
     </div>
   </div>
 </section>
+
+    <footer class="footer py-4 text-center font-AzeretMono">
+      Coding Home © 2022 All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
