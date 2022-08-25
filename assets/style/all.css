@@ -13247,6 +13247,18 @@ body {
   width: auto !important;
 }
 
+.btn-list .swiper-slide:hover {
+  background-color: #1C1C1C;
+  border: 1px solid #62DB54;
+  color: #62DB54;
+}
+
+.btn-active {
+  background-color: #1C1C1C;
+  border: 1px solid #62DB54;
+  color: #62DB54;
+}
+
 .lesson-list {
   margin-left: 12px;
   margin-right: 12px;
