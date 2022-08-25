@@ -7,7 +7,19 @@ body {
 
     .swiper-slide {
         width: auto !important;
+
+        &:hover {
+            background-color: $bg-main;
+            border: 1px solid $primary;
+            color: $primary;
+        }
     }
+}
+
+.btn-active {
+    background-color: $bg-main;
+    border: 1px solid $primary;
+    color: $primary;
 }
 
 .lesson-list {
