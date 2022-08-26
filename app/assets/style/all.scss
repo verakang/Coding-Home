@@ -4,8 +4,8 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './base.scss';
-@import './mixin.scss';
+@import './layout/base.scss';
+@import './layout/mixin.scss';
 @import './layout/layout.scss';
-@import './layout/index.scss';
-@import './layout/courses.scss';
+@import './pages/index.scss';
+@import './pages/courses.scss';
