@@ -12801,6 +12801,9 @@ nav .navbar-brand {
   width: 50px;
   height: 3px;
   background-color: #62DB54;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .features .features-item {
@@ -12810,7 +12813,6 @@ nav .navbar-brand {
 }
 
 .features .features-item:hover {
-  cursor: pointer;
   background-color: #202020;
   color: #FFFFFF;
   border: 1px solid #62DB54;
@@ -12973,16 +12975,13 @@ nav .navbar-brand {
   transition: opacity 0.5s;
 }
 
-.trait .trait-item:hover {
-  cursor: pointer;
-}
-
 .trait .trait-item:hover span {
   color: #62DB54;
 }
 
 .trait .trait-item:hover .under-line {
   background-color: #62DB54;
+  width: 70px;
 }
 
 .trait .trait-item:hover .card-text {
