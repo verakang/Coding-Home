@@ -12723,7 +12723,7 @@ nav::before {
   height: 2px;
   background-color: #62DB54;
   position: absolute;
-  bottom: 0;
+  top: 90px;
   left: 0;
 }
 
@@ -12733,7 +12733,7 @@ nav::after {
   height: 2px;
   background-color: #09ACF5;
   position: absolute;
-  bottom: 0;
+  top: 90px;
   right: 0;
 }
 
