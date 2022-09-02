@@ -12713,10 +12713,6 @@ img {
   height: auto;
 }
 
-.topbox {
-  height: 90px;
-}
-
 nav::before {
   content: "";
   width: calc(100vw/2);
@@ -12725,6 +12721,12 @@ nav::before {
   position: absolute;
   top: 90px;
   left: 0;
+}
+
+@media (max-width: 992px) {
+  nav::before {
+    top: 72px;
+  }
 }
 
 nav::after {
@@ -12737,6 +12739,12 @@ nav::after {
   right: 0;
 }
 
+@media (max-width: 992px) {
+  nav::after {
+    top: 72px;
+  }
+}
+
 nav .navbar-brand {
   display: block;
   width: 175px;
@@ -12747,6 +12755,15 @@ nav .navbar-brand {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  nav .navbar-brand {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/logo2.svg");
+    background-size: cover;
+  }
 }
 
 .login-icon {
@@ -12769,6 +12786,7 @@ nav .navbar-brand {
   background-image: url("../images/bg_home.jpg");
   background-size: cover;
   background-position: center center;
+  margin-top: 90px;
 }
 
 .banner .banner-text {
@@ -12784,6 +12802,13 @@ nav .navbar-brand {
 .banner .banner-text h2, .banner .banner-text .h2 {
   font-size: 48px;
   line-height: 48px;
+}
+
+@media (max-width: 992px) {
+  .banner .banner-text h2, .banner .banner-text .h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -12926,8 +12951,7 @@ nav .navbar-brand {
   line-height: 32px;
 }
 
-.courses .card-body span {
-  display: block;
+.courses .card-body h6, .courses .card-body .h6 {
   font-size: 16px;
   line-height: 24px;
   color: #62DB54;
@@ -13045,10 +13069,6 @@ nav .navbar-brand {
 
 .article .article-item {
   background-color: #1C1C1C;
-}
-
-.article .article-item:hover {
-  cursor: pointer;
 }
 
 .article .article-item:hover .outline {
@@ -13239,7 +13259,7 @@ body {
 }
 
 .btn-list {
-  margin-top: 40px;
+  margin-top: 130px;
 }
 
 .btn-list .swiper-slide {
@@ -13284,7 +13304,7 @@ body {
   line-height: 35px;
 }
 
-.lesson-item .item-body span {
+.lesson-item .item-body h6, .lesson-item .item-body .h6 {
   font-size: 16px;
   line-height: 24px;
   color: #62DB54;
