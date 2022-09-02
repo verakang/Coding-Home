@@ -1,0 +1,476 @@
+.banner {
+    height: calc(100vh - 90px);
+    background-image: url("../images/bg_home.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-top: 90px;
+
+    .banner-text {
+        background-color: $bg-light;
+
+        .square {
+            width: 10px;
+            height: 10px;
+            background-color: $text-main;
+        }
+
+        h2 {
+            font-size: 48px;
+            line-height: 48px;
+
+            @include pad {
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+@include pad {
+    .banner {
+        background-image: url("../images/bg_home_mobile.jpg");
+    }
+}
+
+.index-titles {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.under-line {
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+    transition: 0.5s;
+}
+
+.features {
+    .features-item {
+        border-radius: 12px;
+        border: 1px solid transparent;
+        color: $border-color;
+
+        &:hover {
+            background-color: $bg-light;
+            color: $text-main;
+            border: 1px solid $primary;
+        }
+
+        span {
+            font-size: 50px;
+
+            &:hover {
+                background: linear-gradient($highlight-color, $primary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+}
+
+@include pad {
+    .features-item {
+        background-color: $bg-light;
+
+        span {
+            background: linear-gradient($highlight-color, $primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+.steps {
+    background-color: $bg-main;
+
+    .steps-list {
+        margin-top: 74px;
+    }
+
+    .steps-item {
+        border: 1px solid $text-main;
+        border-radius: 12px;
+
+        span {
+            display: block;
+            background-color: $bg-main;
+            font-size: 48px;
+            line-height: 56px;
+            position: absolute;
+            top: -26px;
+            left: 48px;
+        }
+
+        .item-title {
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+}
+
+.types {
+    background-color: $secondary;
+
+    .types-list {
+        .types-item {
+            border: 1px solid $text-main;
+            border-radius: 8px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $text-main;
+                color: $bg-darkest;
+            }
+        }
+
+        .swiper-slide {
+            width: auto !important;
+        }
+    }
+}
+
+.courses {
+    background-color: $bg-darkest;
+
+    .card {
+        background-color: $secondary;
+        border: 1px solid $bg-darkest;
+        border-radius: 24px;
+
+        &:hover {
+            border: 1px solid $primary;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .card-name {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+
+    .card-body {
+        border-bottom: 1px solid $text-main;
+
+        .card-title {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        h6 {
+            font-size: 16px;
+            line-height: 24px;
+            color: $primary;
+        }
+
+        .card-text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .card-footer {
+        span {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        p {
+            font-size: 32px;
+            line-height: 37px;
+        }
+    }
+
+    .btn {
+        border-radius: 8px;
+        width: 172px;
+        color: $text-main;
+    }
+}
+
+.trait {
+    .trait-item {
+        img {
+            width: 100%;
+            height: 615px;
+            object-fit: cover;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $bg-main;
+            opacity: 0.9;
+            transition: opacity 0.5s;
+        }
+
+        &:hover {
+            span {
+                color: $primary;
+            }
+
+            .under-line {
+                background-color: $primary;
+                width: 70px;
+            }
+
+            .card-text {
+                color: $text-main;
+            }
+
+            &::before {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    .item-info {
+        z-index: 5;
+
+        span {
+            color: $text-second;
+        }
+
+        .card-title {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        .under-line {
+            background-color: $text-main;
+        }
+
+        .card-text {
+            color: $text-second;
+        }
+    }
+}
+
+@include pad {
+    .trait {
+        .trait-item {
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .trait {
+        .trait-item {
+            img {
+                width: 100%;
+                height: 263px;
+                object-fit: cover;
+            }
+        }
+
+        .item-info {
+            .under-line {
+                background-color: $text-main;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.article {
+    background-color: $bg-main;
+
+    .article-item {
+        background-color: $bg-main;
+
+        &:hover {
+            .outline {
+                display: block;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 21px;
+            color: $primary;
+        }
+
+        .outline {
+            display: none;
+            width: 32px;
+            height: 32px;
+
+            &.top-left {
+                border-top: 1px solid $primary;
+                border-left: 1px solid $primary;
+                border-top-left-radius: 10px;
+            }
+
+            &.top-right {
+                border-top: 1px solid $primary;
+                border-right: 1px solid $primary;
+                border-top-right-radius: 10px;
+            }
+
+            &.bottom-left {
+                border-bottom: 1px solid $primary;
+                border-left: 1px solid $primary;
+                border-bottom-left-radius: 10px;
+            }
+
+            &.bottom-right {
+                border-bottom: 1px solid $primary;
+                border-right: 1px solid $primary;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+}
+
+.feedback {
+    width: 100%;
+    height: 733px;
+    background-image: url("../images/bg_share.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    @include pad {
+        height: auto;
+    }
+
+    .feedback-main {
+        div {
+            border-radius: 24px;
+        }
+
+        .card::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 1px solid $border-color;
+            border-radius: 24px;
+            position: absolute;
+            top: 10px;
+            left: -15px;
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            height: 381px;
+            object-fit: cover;
+            border-radius: 24px;
+        }
+    }
+
+    .feedback-item {
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+
+        @include pad {
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+
+        div {
+            color: $bg-darkest;
+            border-radius: 24px;
+            border-bottom-left-radius: 0;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+
+    .navigation {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        z-index: 4;
+
+        @include pad {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .swiper-pagination {
+        position: initial;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: $primary;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 16px;
+        border-radius: 10px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: "";
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: initial;
+        width: 24px;
+        height: 24px;
+        z-index: 4;
+    }
+}
+
+.join {
+    background-color: $bg-darkest;
+
+    .join-content {
+        background-color: $bg-light;
+        border-radius: 24px;
+
+        span {
+            font-size: 80px;
+        }
+
+        .content-title {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}
